@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/appbarTitle"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="@string/find_partner"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            android:background="@color/purple_500"
+            />
+        <ImageButton
+            android:id="@+id/back_button"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_alignLeft="@+id/appbarTitle"
+            android:background="@color/purple_500"
+            android:src="@drawable/back_icon" />
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_below="@+id/appbarTitle"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/bio_profile_image"
+            android:scaleType="centerCrop"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="25dp"
+            android:src="@drawable/elon"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FF000000" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_below="@+id/bio_profile_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:textSize="40dp"
+            android:textColor="@color/black"
+            android:fontFamily="serif-monospace"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Name"
+            />
+
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/name"
+            android:id="@+id/bio_Textbox"
+            android:layout_width="250dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:ems="15"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:background="@color/white"
+            android:text="Bio here"
+            android:drawablePadding="8dp"
+            android:elevation="6dp"
+            android:paddingStart="6dp"
+            android:textSize="15sp"
+            android:layout_marginTop="30dp" />
+
+
+
+        <Button
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/bio_Textbox"
+            android:id="@+id/nextBtn_messageBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="#9C5ADF"
+            android:textColor="@color/white"
+            android:text="Messages"
+            android:paddingTop="10dp"
+            android:paddingRight="30dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="30dp"
+            android:layout_marginTop="30dp" />
+
+
+    </RelativeLayout>
+</ScrollView>

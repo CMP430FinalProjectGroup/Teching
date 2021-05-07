@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center_vertical">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|right"
+        android:layout_margin="@dimen/fab_margin"
+        android:background="@color/white"
+        android:backgroundTint="#FFFFFF"
+        android:src="@drawable/ic_message" />
+
+    <ImageView
+        android:id="@+id/bio_profile_image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center" />
+
+    <EditText
+        android:id="@+id/bio_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/custom_input"
+        android:hint="@string/user_personalName"
+        android:inputType="textPersonName"
+        android:layout_marginTop="30dp"/>
+
+    <EditText
+        android:id="@+id/bio_Textbox"
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:ems="15"
+        android:textAlignment="center"
+        android:background="@color/white"
+        android:hint="@string/bioFiller"
+        android:inputType="textPersonName"
+        android:drawablePadding="8dp"
+        android:elevation="6dp"
+        android:paddingStart="6dp"
+        android:textSize="15sp"
+        android:layout_marginTop="30dp" />
+
+    <Button
+        android:id="@+id/nextBtn_findPartner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="#9C5ADF"
+        android:textColor="@color/black"
+        android:text="Find A Partner"
+        android:paddingTop="10dp"
+        android:paddingRight="30dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="30dp"
+        android:layout_marginTop="30dp" />
+
+    <Button
+        android:id="@+id/nextBtn_messageBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="#9C5ADF"
+        android:textColor="@color/black"
+        android:text="Messages"
+        android:paddingTop="10dp"
+        android:paddingRight="30dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="30dp"
+        android:layout_marginTop="30dp" />
+
+</LinearLayout>

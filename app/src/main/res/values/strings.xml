@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">Teching</string>
+    <string name="user_image_username">Please Create a Username</string>
+    <string name="hint_email">Please Insert your email</string>
+    <string name="user_personalName">Enter Name</string>
+    <string name="inputUsername">Please Type in a username</string>
+    <string name="hint_password">Please enter a password</string>
+    <string name="hint_passwordConfirm">Please confirm your password</string>
+    <string name="enterUsername">Username</string>
+    <string name="enterPassword">Password</string>
+    <string name="user_dateOfBirth">Please enter your date of birth</string>
+    <string name="user_gender">Please enter your gender</string>
+    <string name="user_location">Please enter your location</string>
+    <string name="bioFiller">Enter a bio</string>
+    <string name="find_partner">Find Partner</string>
+    <string name="messages">Messages</string>
+    <string name="recently_viewed">Recently Viewed</string>
+    <string name="bio_profile">Profile</string>
+
+    <string-array name="name">
+        <item>Elon Musk</item>
+        <item>Mark Juckerberg</item>
+        <item>Steve Jobs</item>
+        <item>Bill Gates</item>
+        <item>Jeff Bezos</item>
+        <item>Ren Zhengfei</item>
+        <item>Rapunzel</item>
+        <item>Elsa</item>
+        <item>Olaf</item>
+
+    </string-array>
+
+    <array name="userImages">
+        <item>@drawable/elon</item>
+        <item>@drawable/juck</item>
+        <item>@drawable/steve</item>
+        <item>@drawable/bill</item>
+        <item>@drawable/jeffbezos</item>
+        <item>@drawable/renzhengfei</item>
+        <item>@drawable/rapunzel</item>
+        <item>@drawable/elsa</item>
+        <item>@drawable/olaf</item>
+    </array>
+
+    <string-array name="bio">
+        <item>Hi\nI am available</item>
+        <item>Hello there </item>
+        <item>This is Steve</item>
+        <item>Owner of microsoft</item>
+        <item>Hey \nI am Using TECHING</item>
+        <item>hi\n </item>
+        <item>This is my bio</item>
+        <item>Nothing to say </item>
+        <item>Send me message..</item>
+
+    </string-array>
+
+
+</resources>

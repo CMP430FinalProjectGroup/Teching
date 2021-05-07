@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center_vertical">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:background="@drawable/teching_logo"
+        android:layout_marginTop="25dp"/>
+
+    <TextView
+        android:id="@+id/welcomeNaoText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#9C5ADF"
+        android:textColor="@color/black"
+        android:text="Welcome to Nao"
+        android:textSize="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="60dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="60dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="50dp"/>
+
+    <Button
+        android:id="@+id/beRespectfulTerm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="#9C5ADF"
+        android:textColor="@color/black"
+        android:text="Be Respectful"
+        android:paddingTop="20dp"
+        android:paddingRight="100dp"
+        android:paddingBottom="20dp"
+        android:paddingLeft="100dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="5dp"/>
+
+    <Button
+        android:id="@+id/beProactiveTerm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="#9C5ADF"
+        android:textColor="@color/black"
+        android:text="Be Proactive"
+        android:paddingTop="20dp"
+        android:paddingRight="100dp"
+        android:paddingBottom="20dp"
+        android:paddingLeft="100dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="5dp"/>
+
+    <Button
+        android:id="@+id/beHonestTerm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="#9C5ADF"
+        android:textColor="@color/black"
+        android:text="Be honest"
+        android:paddingTop="20dp"
+        android:paddingRight="100dp"
+        android:paddingBottom="20dp"
+        android:paddingLeft="100dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="5dp"/>
+
+    <Button
+        android:id="@+id/staySafeTerm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="#9C5ADF"
+        android:textColor="@color/black"
+        android:text="Stay safe"
+        android:paddingTop="20dp"
+        android:paddingRight="100dp"
+        android:paddingBottom="20dp"
+        android:paddingLeft="100dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="5dp"/>
+
+    <Button
+        android:id="@+id/toProfileBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="#987DB3"
+        android:textColor="@color/black"
+        android:text="I agree with the terms!"
+        android:paddingTop="20dp"
+        android:paddingRight="80dp"
+        android:paddingBottom="20dp"
+        android:paddingLeft="80dp"
+        android:layout_margin="10dp" />
+
+</LinearLayout>

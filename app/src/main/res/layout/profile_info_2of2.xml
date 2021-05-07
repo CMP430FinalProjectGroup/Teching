@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center_vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:text="Profile Information"
+        android:textStyle="bold|italic"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="Show me"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:ems="15"
+        android:paddingStart="6dp"
+        android:background="@drawable/custom_input"
+        android:text="Men"/>
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:ems="15"
+        android:paddingStart="6dp"
+        android:background="@drawable/custom_input"
+        android:text="Women"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="Distance Range"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:min="0"
+        android:max="100"
+        android:progress="25"
+        android:ems="15"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="Age Range Preference"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+<!--    <com.google.android.material.slider.RangeSlider-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:stepSize="10.0"-->
+<!--        android:valueFrom="0.0"-->
+<!--        android:valueTo="100.0"-->
+<!--        android:values="@arrays/initial_range_slider_values"/>-->
+
+    <Button
+        android:id="@+id/secondInfoPage_toBio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="#9C5ADF"
+        android:textColor="@color/black"
+        android:text="Next"
+        android:paddingTop="10dp"
+        android:paddingRight="30dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="30dp"
+        android:layout_marginTop="150dp" />
+
+</LinearLayout>

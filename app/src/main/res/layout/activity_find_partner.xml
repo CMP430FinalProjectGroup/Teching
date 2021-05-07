@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/appbarTitle"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="@string/find_partner"
+        android:textSize="18dp"
+        android:textColor="@color/white"
+        android:background="@color/purple_500"
+        />
+    <ImageButton
+        android:id="@+id/back_button"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_alignLeft="@+id/appbarTitle"
+        android:background="@color/purple_500"
+        android:src="@drawable/back_icon" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@+id/appbarTitle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:id="@+id/recyclerView"
+        />
+
+
+
+</RelativeLayout>

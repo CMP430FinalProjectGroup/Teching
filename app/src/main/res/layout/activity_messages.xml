@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/appbarTitle"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="@string/messages"
+        android:textSize="18dp"
+        android:textColor="@color/white"
+        android:background="@color/purple_500"
+        />
+    <ImageButton
+        android:id="@+id/back_button"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_alignLeft="@+id/appbarTitle"
+        android:background="@color/purple_500"
+        android:src="@drawable/back_icon" />
+
+    <TextView
+        android:id="@+id/Recent_viewd_tittle_text"
+        android:layout_below="@+id/appbarTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="@string/recently_viewed"
+        android:textSize="18dp"
+        android:textStyle="italic|bold"
+        android:textColor="@color/black"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@+id/Recent_viewd_tittle_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:id="@+id/recyclerView_for_recent_profile"
+        />
+
+    <TextView
+        android:id="@+id/message_tittle_text"
+        android:layout_below="@+id/recyclerView_for_recent_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="@string/messages"
+        android:textSize="18dp"
+        android:textStyle="italic|bold"
+        android:textColor="@color/black"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@+id/message_tittle_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:id="@+id/recyclerView"
+        />
+</RelativeLayout>
