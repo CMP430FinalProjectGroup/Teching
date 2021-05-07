@@ -1,4 +1,4 @@
-package com.project.team2.teching;
+package com.project.team2.teching.activities;
 
 public class User {
 

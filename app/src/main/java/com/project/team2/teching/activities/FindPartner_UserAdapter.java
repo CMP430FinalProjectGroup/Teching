@@ -1,4 +1,4 @@
-package com.project.team2.teching;
+package com.project.team2.teching.activities;
 
 import android.content.Context;
 import android.content.Intent;
@@ -11,6 +11,7 @@ import android.widget.TextView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
+import com.project.team2.teching.R;
 
 import java.util.ArrayList;
 

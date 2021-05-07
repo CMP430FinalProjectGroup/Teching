@@ -1,4 +1,4 @@
-package com.project.team2.teching;
+package com.project.team2.teching.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -6,6 +6,8 @@ import android.view.View;
 import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.project.team2.teching.R;
 
 public class SecondPageProfileInfoActivity extends AppCompatActivity {
 

@@ -1,4 +1,4 @@
-package com.project.team2.teching;
+package com.project.team2.teching.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,6 +9,7 @@ import android.widget.ImageButton;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.project.team2.teching.R;
 
 public class UserBioActivity extends AppCompatActivity {
 

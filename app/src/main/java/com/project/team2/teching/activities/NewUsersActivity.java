@@ -1,4 +1,4 @@
-package com.project.team2.teching;
+package com.project.team2.teching.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.project.team2.teching.R;
 
 public class NewUsersActivity extends AppCompatActivity {
 
