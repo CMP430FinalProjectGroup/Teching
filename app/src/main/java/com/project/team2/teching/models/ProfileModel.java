@@ -1,22 +1,22 @@
-package com.project.team2.teching;
+package com.project.team2.teching.models;
 
 import androidx.annotation.NonNull;
 
 public class ProfileModel {
 
-    private String iD;
+    private String id;
     private String Name;
-    private String DateofBirth;
+    private String DateOfBirth;
     private String Gender;
     private String locationId;
     private String genderPref;
     private String userId;
     private String bio;
 
-    public ProfileModel(String iD, String name, String dateofBirth, String gender, String locationId, String genderPref, String userId, String bio) {
-        this.iD = iD;
+    public ProfileModel(String id, String name, String dateOfBirth, String gender, String locationId, String genderPref, String userId, String bio) {
+        this.id = id;
         Name = name;
-        DateofBirth = dateofBirth;
+        DateOfBirth = dateOfBirth;
         Gender = gender;
         this.locationId = locationId;
         this.genderPref = genderPref;
@@ -27,8 +27,8 @@ public class ProfileModel {
     //Getters
 
     @NonNull
-    public String getiD() {
-        return iD;
+    public String getId() {
+        return id;
     }
 
     @NonNull
@@ -37,8 +37,8 @@ public class ProfileModel {
     }
 
     @NonNull
-    public String getDateofBirth() {
-        return DateofBirth;
+    public String getDateOfBirth() {
+        return DateOfBirth;
     }
 
     @NonNull
@@ -68,16 +68,16 @@ public class ProfileModel {
 
     //Setters
 
-    public void setiD(@NonNull String iD) {
-        this.iD = iD;
+    public void setId(@NonNull String id) {
+        this.id = id;
     }
 
     public void setName(@NonNull String name) {
         Name = name;
     }
 
-    public void setDateofBirth(@NonNull String dateofBirth) {
-        DateofBirth = dateofBirth;
+    public void setDateOfBirth(@NonNull String dateOfBirth) {
+        DateOfBirth = dateOfBirth;
     }
 
     public void setGender(@NonNull String gender) {

@@ -1,16 +1,16 @@
-package com.project.team2.teching;
+package com.project.team2.teching.models;
 
 import androidx.annotation.NonNull;
 
 public class ResourcesModel {
 
-    private String iD;
+    private String id;
     private String title;
     private String chatId;
 
 
-    public ResourcesModel(String iD, String title, String chatId) {
-        this.iD = iD;
+    public ResourcesModel(String id, String title, String chatId) {
+        this.id = id;
         this.title = title;
         this.chatId = chatId;
     }
@@ -19,8 +19,8 @@ public class ResourcesModel {
     //Getters
 
     @NonNull
-    public String getiD() {
-        return iD;
+    public String getId() {
+        return id;
     }
 
     @NonNull
@@ -35,8 +35,8 @@ public class ResourcesModel {
 
     //Setters
 
-    public void setiD(@NonNull String iD) {
-        this.iD = iD;
+    public void setId(@NonNull String id) {
+        this.id = id;
     }
 
     public void setTitle(@NonNull String title) {

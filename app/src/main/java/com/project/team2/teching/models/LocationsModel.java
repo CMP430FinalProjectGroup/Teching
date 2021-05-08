@@ -1,17 +1,17 @@
-package com.project.team2.teching;
+package com.project.team2.teching.models;
 
 import androidx.annotation.NonNull;
 
 public class LocationsModel {
 
-    private String iD;
-    private String zipcode;
+    private String id;
+    private String zipCode;
     private String state;
     private String city;
 
-    public LocationsModel(String iD, String zipcode, String state, String city) {
-        this.iD = iD;
-        this.zipcode = zipcode;
+    public LocationsModel(String id, String zipCode, String state, String city) {
+        this.id = id;
+        this.zipCode = zipCode;
         this.state = state;
         this.city = city;
     }
@@ -20,13 +20,13 @@ public class LocationsModel {
     //Getters
 
     @NonNull
-    public String getiD() {
-        return iD;
+    public String getId() {
+        return id;
     }
 
     @NonNull
-    public String getZipcode() {
-        return zipcode;
+    public String getZipCode() {
+        return zipCode;
     }
 
     @NonNull
@@ -41,12 +41,12 @@ public class LocationsModel {
 
     //Setters
 
-    public void setiD(@NonNull String iD) {
-        this.iD = iD;
+    public void setId(@NonNull String id) {
+        this.id = id;
     }
 
-    public void setZipcode(@NonNull String zipcode) {
-        this.zipcode = zipcode;
+    public void setZipCode(@NonNull String zipCode) {
+        this.zipCode = zipCode;
     }
 
     public void setState(@NonNull String state) {

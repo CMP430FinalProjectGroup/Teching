@@ -17,7 +17,7 @@ public class FindPartner extends AppCompatActivity {
 
     private ImageButton back_button;
     private RecyclerView mRecyclerView;
-    private ArrayList<User> mUsersDaata;
+    private ArrayList<User> mUsersData;
     private FindPartner_UserAdapter mAdapter;
 
     @Override
@@ -37,10 +37,10 @@ public class FindPartner extends AppCompatActivity {
 
 
         // Initialize the ArrayList that will contain the data.
-        mUsersDaata = new ArrayList<>();
+        mUsersData = new ArrayList<>();
 
         // Initialize the adapter and set it to the RecyclerView.
-        mAdapter = new FindPartner_UserAdapter(this, mUsersDaata);
+        mAdapter = new FindPartner_UserAdapter(this, mUsersData);
 
         mRecyclerView.setAdapter(mAdapter);
 
@@ -73,12 +73,12 @@ public class FindPartner extends AppCompatActivity {
 
 
         // Clear the existing data (to avoid duplication).
-        mUsersDaata.clear();
+        mUsersData.clear();
 
         // Create the ArrayList of meals objects with titles and
         // information about each sport.
         for(int i=0;i<nameList.length;i++){
-            mUsersDaata.add(new User(nameList[i],imageResources.getResourceId(i,0),bioList[i]));
+            mUsersData.add(new User(nameList[i],imageResources.getResourceId(i,0),bioList[i]));
         }
 
         // Notify the adapter of the change.

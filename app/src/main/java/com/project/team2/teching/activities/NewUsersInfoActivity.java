@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ComponentActivity;
 
 import com.project.team2.teching.R;
 
@@ -20,12 +21,13 @@ public class NewUsersInfoActivity extends AppCompatActivity {
 
         toTermsAndPage = findViewById(R.id.nextBtn_termsAct);
 
-        toTermsAndPage.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(NewUsersInfoActivity.this, TermsOfServiceActivity.class);
-                startActivity(intent);
-            }
+        Intent getNewUsersActivityIntent = getIntent();
+
+//        String[] data = getNewUsersActivityIntent.getStringArrayExtra(NewUsersActivity)
+
+        toTermsAndPage.setOnClickListener(v -> {
+            Intent intent = new Intent(NewUsersInfoActivity.this, TermsOfServiceActivity.class);
+            startActivity(intent);
         });
 
     }

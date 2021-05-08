@@ -16,6 +16,11 @@
     <string name="messages">Messages</string>
     <string name="recently_viewed">Recently Viewed</string>
     <string name="bio_profile">Profile</string>
+    <string name="hint_username">Please enter a username</string>
+    <string name="create_username">Create Username</string>
+    <string name="create_password">Create Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="next_btn_text">Next</string>
 
     <string-array name="name">
         <item>Elon Musk</item>

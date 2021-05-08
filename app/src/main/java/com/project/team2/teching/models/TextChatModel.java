@@ -1,16 +1,16 @@
-package com.project.team2.teching;
+package com.project.team2.teching.models;
 
 import androidx.annotation.NonNull;
 
 public class TextChatModel {
 
-    private String iD;
+    private String id;
     private String messages;
     private String chatId;
 
 
-    public TextChatModel(String iD, String messages, String chatId) {
-        this.iD = iD;
+    public TextChatModel(String id, String messages, String chatId) {
+        this.id = id;
         this.messages = messages;
         this.chatId = chatId;
     }
@@ -18,8 +18,8 @@ public class TextChatModel {
     //Getters
 
     @NonNull
-    public String getiD() {
-        return iD;
+    public String getId() {
+        return id;
     }
 
     @NonNull
@@ -34,8 +34,8 @@ public class TextChatModel {
 
     //Setters
 
-    public void setiD(@NonNull String iD) {
-        this.iD = iD;
+    public void setId(@NonNull String id) {
+        this.id = id;
     }
 
     public void setMessages(@NonNull String messages) {

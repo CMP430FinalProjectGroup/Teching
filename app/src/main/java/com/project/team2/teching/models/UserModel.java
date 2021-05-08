@@ -9,8 +9,15 @@ public class UserModel {
     private String profileId;
     private String profilePictureId;
 
-    // Setters
+    public UserModel(@NonNull String username, @NonNull String email, @NonNull String password,
+                     String profileId, String profilePictureId){
+        this.username = username;
+        this.password = password;
+        this.profileId = profileId;
+        this.profilePictureId = profilePictureId;
+    }
 
+    // Setters
 
     public void setUsername(@NonNull String username) {
         this.username = username;

@@ -9,37 +9,85 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TechingApp">
-        <activity android:name=".MainActivity">
+
+        <activity android:name=".activities.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.project.team2.teching.ChatActivity"></activity>
-        <activity android:name="com.project.team2.teching.MessagesActivity" />
-        <activity android:name="com.project.team2.teching.UserProfile" />
-        <activity android:name="com.project.team2.teching.FindPartner" />
-        <activity android:name="com.project.team2.teching.UserBioActivity">
+
+        <activity android:name="com.project.team2.teching.activities.NewUsersActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".NewUsersActivity" />
+                android:value=".activities.MainActivity" />
         </activity>
-        <activity android:name="com.project.team2.teching.SecondPageProfileInfoActivity" />
-        <activity android:name="com.project.team2.teching.FirstPageProfileInfoActivity" />
-        <activity android:name="com.project.team2.teching.TermsOfServiceActivity" />
-        <activity android:name="com.project.team2.teching.NewUsersInfoActivity" >
-        </activity>
-        <activity android:name="com.project.team2.teching.NewUsersActivity">
+
+        <activity android:name="com.project.team2.teching.activities.NewUsersInfoActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+                android:value=".activities.NewUsersActivity" />
         </activity>
-        <activity android:name="com.project.team2.teching.ExistingUsersActivity">
+
+        <activity android:name="com.project.team2.teching.activities.TermsOfServiceActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+                android:value=".activities.NewUsersInfoActivity" />
         </activity>
+
+        <activity android:name="com.project.team2.teching.activities.FirstPageProfileInfoActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.TermsOfServiceActivity" />
+        </activity>
+
+        <activity android:name="com.project.team2.teching.activities.SecondPageProfileInfoActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.FirstPageProfileInfoActivity" />
+        </activity>
+
+        <activity android:name="com.project.team2.teching.activities.UserBioActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.MainActivity" />
+        </activity>
+
+        <activity android:name="com.project.team2.teching.activities.FindPartner">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.UserBioActivity" />
+        </activity>
+
+        <activity android:name="com.project.team2.teching.activities.ChatActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.UserBioActivity" />
+        </activity>
+
+        <activity android:name="com.project.team2.teching.activities.MessagesActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.FindPartner" />
+        </activity>
+
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".activities.ChatActivity" />
+
+        <activity android:name="com.project.team2.teching.activities.UserProfile">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.UserBioActivity" />
+        </activity>
+
+        <activity android:name="com.project.team2.teching.activities.ExistingUsersActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.MainActivity" />
+        </activity>
+
     </application>
 
 </manifest>

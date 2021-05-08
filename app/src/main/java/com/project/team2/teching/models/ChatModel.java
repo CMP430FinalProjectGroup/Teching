@@ -1,25 +1,25 @@
-package com.project.team2.teching;
+package com.project.team2.teching.models;
 
 import androidx.annotation.NonNull;
 
 public class ChatModel {
 
-    private String iD;
+    private String id;
 
-    public ChatModel(String iD) {
-        this.iD = iD;
+    public ChatModel(String id) {
+        this.id = id;
     }
 
     //Getters
 
     @NonNull
-    public String getiD() {
-        return iD;
+    public String getId() {
+        return id;
     }
 
     //Setters
 
-    public void setiD(@NonNull String iD) {
-        this.iD = iD;
+    public void setId(@NonNull String id) {
+        this.id = id;
     }
 }
