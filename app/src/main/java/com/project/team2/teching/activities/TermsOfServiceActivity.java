@@ -64,7 +64,9 @@ public class TermsOfServiceActivity extends AppCompatActivity {
 
         toProfile.setOnClickListener(v -> {
             if (isAllGreen()) {
-                startActivity(new Intent(this, FirstPageProfileInfoActivity.class));
+//                startActivity(new Intent(this, FirstPageProfileInfoActivity.class));
+                Intent intent = new Intent(TermsOfServiceActivity.this, ExistingUsersActivity.class);
+                startActivity(intent);
             }else
                 Toast.makeText(this, "Please accept all the terms to proceed.", Toast.LENGTH_SHORT).show();
         });

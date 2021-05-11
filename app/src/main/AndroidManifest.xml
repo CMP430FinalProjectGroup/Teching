@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TechingApp">
-
+        <activity
+            android:name=".activities.SettingsActivity"
+            android:label="@string/title_activity_settings"></activity>
         <activity android:name=".activities.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -17,50 +19,42 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name="com.project.team2.teching.activities.NewUsersActivity">
+        <activity android:name=".activities.NewUsersActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".activities.MainActivity" />
         </activity>
-
-        <activity android:name="com.project.team2.teching.activities.TermsOfServiceActivity">
+        <activity android:name=".activities.TermsOfServiceActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".activities.NewUsersActivity" />
         </activity>
-
-        <activity android:name="com.project.team2.teching.activities.FirstPageProfileInfoActivity">
+        <activity android:name=".activities.FirstPageProfileInfoActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".activities.TermsOfServiceActivity" />
         </activity>
-
-        <activity android:name="com.project.team2.teching.activities.SecondPageProfileInfoActivity">
+        <activity android:name=".activities.SecondPageProfileInfoActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".activities.FirstPageProfileInfoActivity" />
         </activity>
-
-        <activity android:name="com.project.team2.teching.activities.UserBioActivity">
+        <activity android:name=".activities.UserBioActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".activities.MainActivity" />
         </activity>
-
-        <activity android:name="com.project.team2.teching.activities.FindPartner">
+        <activity android:name=".activities.FindPartner">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".activities.UserBioActivity" />
         </activity>
-
-        <activity android:name="com.project.team2.teching.activities.ChatActivity">
+        <activity android:name=".activities.ChatActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".activities.UserBioActivity" />
         </activity>
-
-        <activity android:name="com.project.team2.teching.activities.MessagesActivity" >
+        <activity android:name=".activities.MessagesActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".activities.FindPartner" />
@@ -70,18 +64,16 @@
             android:name="android.support.PARENT_ACTIVITY"
             android:value=".activities.ChatActivity" />
 
-        <activity android:name="com.project.team2.teching.activities.UserProfileActivity">
+        <activity android:name=".activities.UserProfileActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".activities.UserBioActivity" />
         </activity>
-
-        <activity android:name="com.project.team2.teching.activities.ExistingUsersActivity">
+        <activity android:name=".activities.ExistingUsersActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".activities.MainActivity" />
         </activity>
-
     </application>
 
 </manifest>

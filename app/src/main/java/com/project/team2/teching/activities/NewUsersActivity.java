@@ -44,8 +44,7 @@ public class NewUsersActivity extends AppCompatActivity {
         userModel = new UserModel();
 
         toTOSPage.setOnClickListener(v -> {
-            if (checkAllInputs() &&
-                    confirmPassword(password, confirmPassword)) {
+            if (checkAllInputs() && confirmPassword(password, confirmPassword)) {
                 addUser(username.getText().toString(), email.getText().toString(), password.getText().toString());
             }
         });
