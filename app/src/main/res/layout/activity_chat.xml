@@ -8,10 +8,9 @@
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/app_bar2_layout"
-        android:background="@color/purple_500"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        >
+        android:background="@color/purple_500">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/constraint_layout_id"
@@ -28,8 +27,7 @@
                 android:theme="?attr/actionBarTheme"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                >
+                app:layout_constraintTop_toTopOf="parent">
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -43,29 +41,28 @@
                         android:layout_height="50dp"
                         android:layout_centerVertical="true"
                         android:background="@color/purple_500"
-                        android:src="@drawable/back_icon"/>
+                        android:src="@drawable/back_icon" />
 
                     <de.hdodenhof.circleimageview.CircleImageView
                         android:id="@+id/bio_profile_image"
                         android:layout_width="46dp"
                         android:layout_height="46dp"
-                        android:layout_alignParentEnd="true"
                         android:layout_alignParentTop="true"
-                        android:src="@drawable/elon"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginEnd="16dp"
                         android:cropToPadding="true"
-                        android:layout_marginRight="16dp"
-                        android:layout_marginTop="2dp">
-                    </de.hdodenhof.circleimageview.CircleImageView>
+                        android:src="@drawable/elon" />
 
                     <TextView
-                        android:layout_centerHorizontal="true"
                         android:id="@+id/name"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
                         android:layout_centerVertical="true"
-                        android:text="Display Name"
+                        android:text="@string/display_name"
                         android:textColor="@color/white"
-                        android:textSize="20dp" />
+                        android:textSize="20sp" />
 
 
                 </RelativeLayout>
@@ -76,81 +73,81 @@
 
 
     <TextView
-        android:layout_marginTop="10dp"
-        android:layout_below="@+id/app_bar2_layout"
         android:id="@+id/tv1"
-        android:text="hi"
-        android:textSize="16dp"
-        android:textColor="@color/white"
-        android:paddingLeft="20dp"
-        android:paddingRight="20dp"
-        android:paddingTop="5dp"
-        android:paddingBottom="5dp"
-        android:background="@drawable/inputs_layout_recieve_msg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        />
-    <TextView
+        android:layout_below="@+id/app_bar2_layout"
         android:layout_marginTop="10dp"
+        android:background="@drawable/inputs_layout_receive_msg"
+        android:paddingLeft="20dp"
+        android:paddingTop="5dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="5dp"
+        android:text="@string/receiver_message"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/tv1"
         android:layout_alignParentEnd="true"
-        android:text="hey "
-        android:textSize="16dp"
-        android:textColor="@color/black"
-        android:paddingLeft="20dp"
-        android:paddingRight="20dp"
-        android:paddingTop="5dp"
-        android:paddingBottom="5dp"
+        android:layout_marginTop="10dp"
         android:background="@drawable/inputs_layout_send_msg"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        />
+        android:paddingLeft="20dp"
+        android:paddingTop="5dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="5dp"
+        android:text="@string/receiver_message"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
 
 
     <LinearLayout
         android:id="@+id/chat_linear_layout_private_id"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:orientation="horizontal"
-        android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
-        android:weightSum="8"
-        android:layout_marginRight="5dp"
+        android:layout_alignParentBottom="true"
         android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
         android:layout_marginBottom="5dp"
         android:background="@drawable/inputs_layout5"
-        >
+        android:orientation="horizontal"
+        android:weightSum="8">
+
         <ImageButton
             android:id="@+id/plusID"
-            android:background="@color/white"
-            android:layout_weight="1"
-            android:padding="5dp"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:src="@drawable/ic_add_icon"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:padding="5dp"
             android:scaleType="fitXY"
-            />
+            android:src="@drawable/ic_add_icon"
+            android:contentDescription="@string/add_contents_description" />
 
         <EditText
             android:id="@+id/et_input_private_message_ID"
-            android:background="@drawable/inputs_layout2"
-            android:layout_weight="6"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:hint="Write message here..."
-            android:paddingLeft="10dp"
             android:layout_marginStart="5dp"
-            android:layout_marginBottom="5dp"
             android:layout_marginTop="5dp"
-            />
+            android:layout_marginBottom="5dp"
+            android:layout_weight="6"
+            android:background="@drawable/inputs_layout2"
+            android:hint="@string/write_message_here"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp" />
+
         <ImageButton
             android:id="@+id/btn_send_private_message_ID"
-            android:background="@color/white"
-            android:layout_weight="1"
-            android:padding="5dp"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:src="@drawable/send_icon"
-            android:scaleType="fitXY" />
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:padding="5dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/send_icon" />
     </LinearLayout>
 </RelativeLayout>

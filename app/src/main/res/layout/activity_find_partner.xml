@@ -14,14 +14,14 @@
         android:textColor="@color/white"
         android:textSize="18sp" />
 
-    <ImageButton
-        android:id="@+id/back_button"
-        android:layout_width="50dp"
-        android:layout_height="30dp"
-        android:layout_alignStart="@+id/appbarTitle"
-        android:background="@color/purple_500"
-        android:src="@drawable/back_icon"
-        android:contentDescription="" />
+<!--    <ImageButton-->
+<!--        android:id="@+id/back_button"-->
+<!--        android:layout_width="50dp"-->
+<!--        android:layout_height="30dp"-->
+<!--        android:layout_alignStart="@+id/appbarTitle"-->
+<!--        android:background="@color/purple_500"-->
+<!--        android:src="@drawable/back_icon"-->
+<!--        android:contentDescription="" />-->
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"

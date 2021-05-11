@@ -134,7 +134,7 @@ class Recent_Viewed_Adapter extends RecyclerView.Adapter<Recent_Viewed_Adapter.V
         public void onClick(View v) {
 
             User currentUser = mUsersData.get(getAdapterPosition());
-            Intent detailIntent = new Intent(mContext, UserProfile.class);
+            Intent detailIntent = new Intent(mContext, UserProfileActivity.class);
 
             detailIntent.putExtra("title", currentUser.getName());
             detailIntent.putExtra("image_resource",

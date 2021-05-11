@@ -10,18 +10,15 @@ import com.project.team2.teching.R;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button LogInBtn;
-    private Button createAccountBtn;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        LogInBtn = findViewById(R.id.logInBtn);
-        createAccountBtn = findViewById(R.id.createAccountBtn);
+        Button logInBtn = findViewById(R.id.logInBtn);
+        Button createAccountBtn = findViewById(R.id.createAccountBtn);
 
-        LogInBtn.setOnClickListener(v -> {
+        logInBtn.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, ExistingUsersActivity.class);
             startActivity(intent);
         });

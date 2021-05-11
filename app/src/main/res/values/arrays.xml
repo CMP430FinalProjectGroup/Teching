@@ -4,4 +4,10 @@
         <item>20.0</item>
         <item>80.0</item>
     </array>
+
+    <string-array name="gender_values">
+        <item>Select your gender</item>
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
 </resources>

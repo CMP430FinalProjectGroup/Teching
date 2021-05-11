@@ -1,132 +1,151 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:layout_gravity="center_vertical">
+    android:layout_height="match_parent">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <ScrollView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="30dp"
-        android:text="Profile Information"
-        android:textStyle="bold|italic"
-        android:textColor="@color/black"
-        android:textSize="20dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp"
-        android:text="Name"
-        android:textColor="@color/black"
-        android:textSize="20dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:importantForAutofill="noExcludeDescendants"
+            android:orientation="vertical">
 
-    <EditText
-        android:id="@+id/nameText_Insert"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:ems="15"
-        android:background="@drawable/custom_input"
-        android:hint="@string/user_personalName"
-        android:inputType="textPersonName"
-        android:drawableStart="@drawable/ic_person"
-        android:drawablePadding="8dp"
-        android:elevation="6dp"
-        android:paddingStart="6dp"
-        android:textSize="15sp"
-        android:layout_marginTop="15dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:text="@string/profile_information_text"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold|italic" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp"
-        android:text="Date Of Birth"
-        android:textColor="@color/black"
-        android:textSize="20dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:text="@string/name_user_profile_info_text"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
 
-    <EditText
-        android:id="@+id/dateOfBirth_Insert"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:ems="15"
-        android:background="@drawable/custom_input"
-        android:hint="@string/user_dateOfBirth"
-        android:inputType="date"
-        android:drawableStart="@drawable/ic_calendar"
-        android:drawablePadding="8dp"
-        android:elevation="6dp"
-        android:paddingStart="6dp"
-        android:textSize="15sp"
-        android:layout_marginTop="15dp" />
+            <EditText
+                android:id="@+id/nameText_Insert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/custom_input"
+                android:drawableStart="@drawable/ic_person"
+                android:drawablePadding="8dp"
+                android:elevation="6dp"
+                android:ems="15"
+                android:hint="@string/user_personalName"
+                android:inputType="textPersonName"
+                android:padding="6dp"
+                android:textSize="15sp" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp"
-        android:text="Gender"
-        android:textColor="@color/black"
-        android:textSize="20dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:text="@string/date_of_birth_profile_info_text"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
 
-    <EditText
-        android:id="@+id/gender_Insert"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:ems="15"
-        android:background="@drawable/custom_input"
-        android:hint="@string/user_gender"
-        android:inputType="date"
-        android:drawablePadding="8dp"
-        android:elevation="6dp"
-        android:paddingStart="6dp"
-        android:textSize="15sp"
-        android:layout_marginTop="15dp" />
+            <DatePicker
+                android:id="@+id/date_of_birth_picker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:calendarViewShown="false"
+                android:datePickerMode="spinner" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp"
-        android:text="Location"
-        android:textColor="@color/black"
-        android:textSize="20dp" />
+            <!--            <EditText-->
+            <!--                android:id="@+id/dateOfBirth_Insert"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_gravity="center"-->
+            <!--                android:layout_marginTop="16dp"-->
+            <!--                android:background="@drawable/custom_input"-->
+            <!--                android:drawableStart="@drawable/ic_calendar"-->
+            <!--                android:drawablePadding="8dp"-->
+            <!--                android:elevation="6dp"-->
+            <!--                android:ems="15"-->
+            <!--                android:hint="@string/user_dateOfBirth"-->
+            <!--                android:inputType="date"-->
+            <!--                android:padding="6dp"-->
+            <!--                android:textSize="15sp" />-->
 
-    <EditText
-        android:id="@+id/location_Insert"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:ems="15"
-        android:background="@drawable/custom_input"
-        android:hint="@string/user_location"
-        android:inputType="date"
-        android:drawableStart="@drawable/ic_location"
-        android:drawablePadding="8dp"
-        android:elevation="6dp"
-        android:paddingStart="6dp"
-        android:textSize="15sp"
-        android:layout_marginTop="15dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="@string/gender_profile_info_text"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
 
-    <Button
-        android:id="@+id/nextbtn_secondPageInfo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:backgroundTint="#9C5ADF"
-        android:textColor="@color/black"
-        android:text="Next"
-        android:paddingTop="10dp"
-        android:paddingRight="30dp"
-        android:paddingBottom="10dp"
-        android:paddingLeft="30dp"
-        android:layout_marginTop="150dp" />
+            <Spinner
+                android:id="@+id/gender_spinner_profile_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:elevation="6dp"
 
-</LinearLayout>
+                android:ems="15"
+                android:padding="6dp"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="@string/location_profile_info_text"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/location_Insert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/custom_input"
+                android:drawableStart="@drawable/ic_location"
+                android:drawablePadding="8dp"
+                android:elevation="6dp"
+                android:ems="15"
+                android:hint="@string/user_location_profile_info_hint"
+                android:inputType="date"
+                android:padding="6dp"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/nextbtn_secondPageInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="32dp"
+                android:backgroundTint="#9C5ADF"
+                android:paddingLeft="30dp"
+                android:paddingTop="10dp"
+                android:paddingRight="30dp"
+                android:paddingBottom="10dp"
+                android:text="@string/next_btn_text"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

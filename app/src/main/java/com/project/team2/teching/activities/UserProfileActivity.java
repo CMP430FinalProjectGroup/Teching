@@ -14,7 +14,7 @@ import com.project.team2.teching.R;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
-public class UserProfile extends AppCompatActivity {
+public class UserProfileActivity extends AppCompatActivity {
 
     private ImageButton back_button;
     private TextView name_TV;
@@ -44,15 +44,12 @@ public class UserProfile extends AppCompatActivity {
         name_TV.setText(name_Received);
         bio_TV.setText(bio_Received);
 
-        messageBox.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(UserProfile.this, ChatActivity.class);
-                intent.putExtra("title",name_Received);
-                intent.putExtra("bio",bio_Received);
-                intent.putExtra("image_resource", image_Received);
-                startActivity(intent);
-            }
+        messageBox.setOnClickListener(v -> {
+            Intent intent = new Intent(UserProfileActivity.this, ChatActivity.class);
+            intent.putExtra("title",name_Received);
+            intent.putExtra("bio",bio_Received);
+            intent.putExtra("image_resource", image_Received);
+            startActivity(intent);
         });
 
         back_button.setOnClickListener(new View.OnClickListener(){

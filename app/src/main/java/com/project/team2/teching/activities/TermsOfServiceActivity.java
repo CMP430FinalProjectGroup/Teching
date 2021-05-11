@@ -3,8 +3,8 @@ package com.project.team2.teching.activities;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -16,7 +16,8 @@ public class TermsOfServiceActivity extends AppCompatActivity {
     private Button proactiveTerm;
     private Button honestTerm;
     private Button safeTerm;
-    private Button toProfile;
+    private boolean hasCheckedRespectTerm = false, hasCheckedProactiveTerm = false,
+            hasCheckedHonestTerm = false, hasCheckedSafeTerm = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,42 +28,49 @@ public class TermsOfServiceActivity extends AppCompatActivity {
         proactiveTerm = findViewById(R.id.beProactiveTerm);
         honestTerm = findViewById(R.id.beHonestTerm);
         safeTerm = findViewById(R.id.staySafeTerm);
-        toProfile = findViewById(R.id.toProfileBtn);
+        Button toProfile = findViewById(R.id.toProfileBtn);
 
-        respectTerm.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                respectTerm.setBackgroundColor(Color.GREEN);
+        respectTerm.setOnClickListener(v -> {
+            respectTerm.setBackgroundColor(Color.GREEN);
+            hasCheckedRespectTerm = true;
+            if (isAllGreen()){
+                toProfile.setEnabled(true);
             }
         });
 
-        proactiveTerm.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                proactiveTerm.setBackgroundColor(Color.GREEN);
+        proactiveTerm.setOnClickListener(v -> {
+            proactiveTerm.setBackgroundColor(Color.GREEN);
+            hasCheckedProactiveTerm = true;
+            if (isAllGreen()){
+                toProfile.setEnabled(true);
             }
         });
 
-        honestTerm.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                honestTerm.setBackgroundColor(Color.GREEN);
+        honestTerm.setOnClickListener(v -> {
+            honestTerm.setBackgroundColor(Color.GREEN);
+            hasCheckedHonestTerm = true;
+            if (isAllGreen()){
+                toProfile.setEnabled(true);
             }
         });
 
-        safeTerm.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                safeTerm.setBackgroundColor(Color.GREEN);
+        safeTerm.setOnClickListener(v -> {
+            safeTerm.setBackgroundColor(Color.GREEN);
+            hasCheckedSafeTerm = true;
+            if (isAllGreen()){
+                toProfile.setEnabled(true);
             }
         });
 
-        toProfile.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(TermsOfServiceActivity.this, FirstPageProfileInfoActivity.class);
-                startActivity(intent);
-            }
+        toProfile.setOnClickListener(v -> {
+            if (isAllGreen()) {
+                startActivity(new Intent(this, FirstPageProfileInfoActivity.class));
+            }else
+                Toast.makeText(this, "Please accept all the terms to proceed.", Toast.LENGTH_SHORT).show();
         });
+    }
+
+    public boolean isAllGreen() {
+        return hasCheckedHonestTerm && hasCheckedSafeTerm && hasCheckedProactiveTerm && hasCheckedRespectTerm;
     }
 }

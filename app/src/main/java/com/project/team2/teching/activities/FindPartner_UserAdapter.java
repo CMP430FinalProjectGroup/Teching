@@ -128,7 +128,7 @@ public class FindPartner_UserAdapter extends RecyclerView.Adapter<FindPartner_Us
         public void onClick(View v) {
 
             User currentUser = mUsersData.get(getAdapterPosition());
-            Intent detailIntent = new Intent(mContext, UserProfile.class);
+            Intent detailIntent = new Intent(mContext, UserProfileActivity.class);
 
             detailIntent.putExtra("title", currentUser.getName());
             detailIntent.putExtra("image_resource",

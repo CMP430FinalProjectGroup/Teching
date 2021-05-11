@@ -24,7 +24,7 @@
         android:layout_gravity="center"
         android:layout_marginTop="200dp"
         android:backgroundTint="#FFFFFF"
-        android:text="Log In"
+        android:text="@string/log_in_btn_text"
         android:textAlignment="center"
         android:textColor="@color/black"
         tools:ignore="MissingConstraints" />

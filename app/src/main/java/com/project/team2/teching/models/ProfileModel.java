@@ -5,23 +5,29 @@ import androidx.annotation.NonNull;
 public class ProfileModel {
 
     private String id;
-    private String Name;
-    private String DateOfBirth;
-    private String Gender;
-    private String locationId;
-    private String genderPref;
+    private String name;
+    private String dateOfBirth;
+    private String gender;
+    private String location;
+    private boolean[] genderPref;
     private String userId;
     private String bio;
+    private int[] ageRange;
 
-    public ProfileModel(String id, String name, String dateOfBirth, String gender, String locationId, String genderPref, String userId, String bio) {
+    public ProfileModel() {
+    }
+
+    public ProfileModel(String id, String name, String dateOfBirth, String gender, String location,
+                        boolean[] genderPref, String userId, String bio, int[] ageRange) {
         this.id = id;
-        Name = name;
-        DateOfBirth = dateOfBirth;
-        Gender = gender;
-        this.locationId = locationId;
+        this.name = name;
+        this.dateOfBirth = dateOfBirth;
+        this.gender = gender;
+        this.location = location;
         this.genderPref = genderPref;
         this.userId = userId;
         this.bio = bio;
+        this.ageRange = ageRange;
     }
 
     //Getters
@@ -31,29 +37,59 @@ public class ProfileModel {
         return id;
     }
 
+    public void setId(@NonNull String id) {
+        this.id = id;
+    }
+
     @NonNull
     public String getName() {
-        return Name;
+        return name;
+    }
+
+    public void setName(@NonNull String name) {
+        this.name = name;
     }
 
     @NonNull
     public String getDateOfBirth() {
-        return DateOfBirth;
+        return dateOfBirth;
+    }
+
+    public void setDateOfBirth(@NonNull String dateOfBirth) {
+        this.dateOfBirth = dateOfBirth;
     }
 
     @NonNull
     public String getGender() {
-        return Gender;
+        return gender;
+    }
+
+    public void setGender(@NonNull String gender) {
+        this.gender = gender;
+    }
+
+    public int[] getAgeRange() {
+        return ageRange;
+    }
+
+    //Setters
+
+    @NonNull
+    public String getLocation() {
+        return location;
+    }
+
+    public void setLocation(@NonNull String locationId) {
+        this.location = locationId;
     }
 
     @NonNull
-    public String getLocationId() {
-        return locationId;
-    }
-
-    @NonNull
-    public String getGenderPref() {
+    public boolean[] getGenderPref() {
         return genderPref;
+    }
+
+    public void setGenderPref(@NonNull boolean[] genderPref) {
+        this.genderPref = genderPref;
     }
 
     @NonNull
@@ -61,46 +97,20 @@ public class ProfileModel {
         return userId;
     }
 
+    public void setUserId(@NonNull String userId) {
+        this.userId = userId;
+    }
+
     @NonNull
     public String getBio() {
         return bio;
-    }
-
-    //Setters
-
-    public void setId(@NonNull String id) {
-        this.id = id;
-    }
-
-    public void setName(@NonNull String name) {
-        Name = name;
-    }
-
-    public void setDateOfBirth(@NonNull String dateOfBirth) {
-        DateOfBirth = dateOfBirth;
-    }
-
-    public void setGender(@NonNull String gender) {
-        Gender = gender;
-    }
-
-    public void setLocationId(@NonNull String locationId) {
-        this.locationId = locationId;
-    }
-
-    public void setGenderPref(@NonNull String genderPref) {
-        this.genderPref = genderPref;
-    }
-
-    public void setUserId(@NonNull String userId) {
-        this.userId = userId;
     }
 
     public void setBio(@NonNull String bio) {
         this.bio = bio;
     }
 
-
-
-
+    public void setAgeRange(int[] ageRange) {
+        this.ageRange = ageRange;
+    }
 }

@@ -24,16 +24,10 @@
                 android:value=".activities.MainActivity" />
         </activity>
 
-        <activity android:name="com.project.team2.teching.activities.NewUsersInfoActivity">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".activities.NewUsersActivity" />
-        </activity>
-
         <activity android:name="com.project.team2.teching.activities.TermsOfServiceActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".activities.NewUsersInfoActivity" />
+                android:value=".activities.NewUsersActivity" />
         </activity>
 
         <activity android:name="com.project.team2.teching.activities.FirstPageProfileInfoActivity">
@@ -76,7 +70,7 @@
             android:name="android.support.PARENT_ACTIVITY"
             android:value=".activities.ChatActivity" />
 
-        <activity android:name="com.project.team2.teching.activities.UserProfile">
+        <activity android:name="com.project.team2.teching.activities.UserProfileActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".activities.UserBioActivity" />
